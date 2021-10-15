@@ -11,7 +11,7 @@ contract ExceptionExample {
     }
 
     function withdrawMoney(address payable _to, uint64 _amount) public {
-        // IF/ELSE deprecated using require instead from solidity version 0.5
+        // IF/ELSE deprecated us require for validity of conditions from solidity version 0.5
         require(_amount <= balanceReceived[msg.sender], "Not enough funds, aborting");
         balanceReceived[msg.sender] -= _amount;
         _to.transfer(_amount);
