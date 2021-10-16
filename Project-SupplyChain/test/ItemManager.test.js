@@ -1,4 +1,4 @@
-const ItemManager = artifacts.require('.././src/contracts/ItemManager.sol');
+const ItemManager = artifacts.require('.././src/contracts/ItemManager');
 
 contract('ItemManager', (accounts) => {
 	it('... should let you create new Items.', async () => {
