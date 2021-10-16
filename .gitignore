@@ -3,3 +3,7 @@
 
 # Remove nod_modules for Project-SupplyChain
 /Project-SupplyChain/node_modules
+
+# Remove nod_modules for Project-TokenSale
+/Project-TokenSale/node_modules
+/Project-TokenSale/.env
