@@ -6,9 +6,7 @@ const AccountIndex = 0;
 module.exports = {
 	// See <http://truffleframework.com/docs/advanced/configuration>
 	// to customize your Truffle configuration!
-	contracts_directory: './src/contracts/',
-	contracts_build_directory: './src/abis/',
-
+	contracts_build_directory: path.join(__dirname, 'client/src/contracts'),
 	networks: {
 		development: {
 			port: 7545,
@@ -47,17 +45,17 @@ module.exports = {
 		},
 	},
 
-	compilers: {
+    compilers: {
 		solc: {
-			version: '0.8.1',
-			optimizer: {
+			version: '0.6.1',
+            optimizer: {
 				enabled: true,
 				runs: 200,
 			},
 		},
 	},
 
-	db: {
+    db: {
 		enabled: false,
 	},
 };
